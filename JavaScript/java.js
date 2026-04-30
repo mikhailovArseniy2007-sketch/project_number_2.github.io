@@ -2,289 +2,289 @@ const products = [
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_1.jpg",
+        img: "assets/img/1_cентября/1_сентября_1.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_2.jpg",
+        img: "assets/img/1_cентября/1_сентября_2.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_3.jpg",
+        img: "assets/img/1_cентября/1_сентября_3.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_4.jpg",
+        img: "assets/img/1_cентября/1_сентября_4.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_5.jpg",
+        img: "assets/img/1_cентября/1_сентября_5.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_6.jpg",
+        img: "assets/img/1_cентября/1_сентября_6.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_7.jpg",
+        img: "assets/img/1_cентября/1_сентября_7.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_8.jpg",
+        img: "assets/img/1_cентября/1_сентября_8.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_9.jpg",
+        img: "assets/img/1_cентября/1_сентября_9.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_10.jpg",
+        img: "assets/img/1_cентября/1_сентября_10.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_11.jpg",
+        img: "assets/img/1_cентября/1_сентября_11.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_12.jpg",
+        img: "assets/img/1_cентября/1_сентября_12.jpg",
         category: "1 сентября"
     },
     {
         title: "1 сентября",
         price: "3600 ₽",
-        img: "../assets/img/1_cентября/1_сентября_13.jpg",
+        img: "assets/img/1_cентября/1_сентября_13.jpg",
         category: "1 сентября"
     },
     {
         title: "Гендер Пати",
         price: "3600 ₽",
-        img: "../assets/img/Гендер-пати/Гендер-Пати_2.jpg",
+        img: "assets/img/Гендер-пати/Гендер-Пати_2.jpg",
         category: "Гендер Пати"
     },
     {
         title: "Гендер Пати",
         price: "3600 ₽",
-        img: "../assets/img/Гендер-пати/Гендер-Пати.jpg",
+        img: "assets/img/Гендер-пати/Гендер-Пати.jpg",
         category: "Гендер Пати"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек.jpg",
+        img: "assets/img/Для_девушек/Для_девушек.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_2.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_2.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_3.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_3.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_4.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_4.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_5.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_5.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_6.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_6.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_7.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_7.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_8.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_8.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_9.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_9.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девушек",
         price: "3600 ₽",
-        img: "../assets/img/Для_девушек/Для_девушек_10.jpg",
+        img: "assets/img/Для_девушек/Для_девушек_10.jpg",
         category: "Для девушек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек.jpg",
+        img: "assets/img/Для_девочек/Для_девочек.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_2.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_2.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_3.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_3.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_4.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_4.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_5.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_5.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_6.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_6.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_7.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_7.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_8.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_8.jpg",
         category: "Для девочек"
     },
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_9.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_9.jpg",
         category: "Для девочек"
-    },
+
     {
         title: "Для девочки",
         price: "3600 ₽",
-        img: "../assets/img/Для_девочек/Для_девочек_10.jpg",
+        img: "assets/img/Для_девочек/Для_девочек_10.jpg",
         category: "Для девочек"
     },
     {
         title: "Для мальчика",
         price: "3600 ₽",
-        img: "../assets/img/Для_мальчиков/Для_мальчиков.jpg",
+        img: "assets/img/Для_мальчиков/Для_мальчиков.jpg",
         category: "Для мальчиков"
     },
     {
         title: "Для мальчика",
         price: "3600 ₽",
-        img: "../assets/img/Для_мальчиков/Для_мальчиков_2.jpg",
+        img: "assets/img/Для_мальчиков/Для_мальчиков_2.jpg",
         category: "Для мальчиков"
     },
     {
         title: "Для мужчины",
         price: "3600 ₽",
-        img: "../assets/img/Для_мужчин/Для_мужчин.jpg",
+        img: "assets/img/Для_мужчин/Для_мужчин.jpg",
         category: "Для мужчин"
     },
     {
         title: "Для мужчины",
         price: "3600 ₽",
-        img: "../assets/img/Для_мужчин/Для_мужчин_2.jpg",
+        img: "assets/img/Для_мужчин/Для_мужчин_2.jpg",
         category: "Для мужчин"
     },
     {
         title: "Для мужчины",
         price: "3600 ₽",
-        img: "../assets/img/Для_мужчин/Для_мужчин_3.jpg",
+        img: "assets/img/Для_мужчин/Для_мужчин_3.jpg",
         category: "Для мужчин"
     },
     {
         title: "Для мужчины",
         price: "3600 ₽",
-        img: "../assets/img/Для_мужчин/Для_мужчин_4.jpg",
+        img: "assets/img/Для_мужчин/Для_мужчин_4.jpg",
         category: "Для мужчин"
     },
     {
         title: "Для мужчины",
         price: "3600 ₽",
-        img: "../assets/img/Для_мужчин/Для_мужчин_5.jpg",
+        img: "assets/img/Для_мужчин/Для_мужчин_5.jpg",
         category: "Для мужчин"
     },
     {
         title: "Фотозона",
         price: "3600 ₽",
-        img: "../assets/img/Фотозоны/фотозона_красная.jpg",
+        img: "assets/img/Фотозоны/фотозона_красная.jpg",
         category: "Фотозоны"
     },
     {
         title: "Фотозона",
         price: "3600 ₽",
-        img: "../assets/img/Фотозоны/фотозона_розовая.jpg",
+        img: "assets/img/Фотозоны/фотозона_розовая.jpg",
         category: "Фотозоны"
     },
     {
         title: "Фотозона",
         price: "3600 ₽",
-        img: "../assets/img/Фотозоны/фотозона_белая.jpg",
+        img: "assets/img/Фотозоны/фотозона_белая.jpg",
         category: "Фотозоны"
     },
     {
         title: "Фотозона",
         price: "3600 ₽",
-        img: "../assets/img/Фотозоны/фотозона_голубая.jpg",
+        img: "assets/img/Фотозоны/фотозона_голубая.jpg",
         category: "Фотозоны"
     },
     {
         title: "8 Марта",
         price: "3600 ₽",
-        img: "../assets/img/8_марта/8_марта_1.jpg",
+        img: "assets/img/8_марта/8_марта_1.jpg",
         category: "8 марта"
     },
     {
         title: "На выписку из роддома",
         price: "3600 ₽",
-        img: "../assets/img/роддом/роддом.jpg",
+        img: "assets/img/роддом/роддом.jpg",
         category: "На выписку из роддома"
     },
 ]
