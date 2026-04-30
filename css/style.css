@@ -1,11 +1,11 @@
 @font-face {
     font-family: Monserat;
-    src: url(/assets/fonts/moserat/MontserratAlternates-Regular.ttf);
+    src: url(assets/fonts/moserat/MontserratAlternates-Regular.ttf);
 }
 
 @font-face {
     font-family: marcul;
-    src: url(/assets/fonts/marcul/MarckScript-Regular.ttf);
+    src: url(assets/fonts/marcul/MarckScript-Regular.ttf);
 }
 
 
@@ -160,7 +160,7 @@ a {
     margin-top: 100px;
     border-bottom: 2px solid black;
     min-height: calc(100vh - 102px);
-    background-image: url(../assets/img/ТоняДует.jpg);
+    background-image: url(assets/img/ТоняДует.jpg);
     background-size: cover;
 }
 
