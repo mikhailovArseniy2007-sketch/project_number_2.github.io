@@ -1,0 +1,332 @@
+@media (max-width: 1366px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .prewiuy_div {
+        display: flex;
+        justify-content: end;
+    }
+
+    .prewiu_img {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .h1_header {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .a_header {
+        font-size: 20px;
+        margin-left: 1.5em;
+    }
+
+    .a_header_tel {
+        font-size: 26px;
+    }
+
+    .button {
+        height: 60px;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        background-color: #d0b8b7;
+        transition: transform 0.2s ease, scale 0.2s ease;
+    }
+
+    .h1_section_popular {
+        font-weight: 400;
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .button_price-list-popular_1 {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .button_price-list-popular_2 {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .input_index_1 {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 900px;
+    }
+
+    .section_main {
+        background-position: right;
+    }
+
+    .h1_header {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .a_header {
+        font-size: 20px;
+        margin-left: 1em;
+    }
+
+    .a_header_tel {
+        font-size: 24px;
+    }
+
+    .slider-track img {
+        /* (100% - 1 зазор 20px) / 2 */
+        width: calc((100% - 20px) / 2);
+        height: auto;      /* Высота подстроится автоматически под пропорции */
+    }   
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .section_main {
+    background-image: url(../assets/img/ТоняДует_для_телефонов.jpg);
+    background-size: cover;
+    /* Сдвигаем фокус на 35% по горизонтали (ближе к лицу) */
+    background-position: 35% center; 
+    /* Немного уменьшим высоту блока, чтобы картинка меньше масштабировалась */ 
+    min-height: calc(77vh - 102px);
+  }
+}
+
+@media (max-width: 998px) {
+    .wrapper {
+        max-width: 948px;
+        margin: 0 25px;
+    }
+    .burger-menu {
+        display: block;
+    }
+
+    .nav_header {
+        position: absolute;
+        top: 0;
+        right: 0; 
+        margin: 0;
+        padding: 120px 20px 20px 20px;
+        background-color: #d0b8b7;
+        transform: translateX(100%); /* Меню полностью за экраном справа */
+        transition: transform 0.5s ease;
+        visibility: hidden;
+        border-radius: 0 0 0 20px;
+    }
+
+    .burger-menu span {
+        position: absolute;
+        width: 46px;
+        height: 4px;
+        background-color: white;
+        border-radius: 1px;
+        left: 7px;
+        top: 28px;
+        transition: transform .5s, opacity 0ms, background-color .5s;
+    }
+
+    .header.open .burger-menu span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .header.open .burger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header.open .burger-menu span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .burger-menu span:nth-child(1) {
+        transform: translateY(-16px);
+    }
+
+    .burger-menu span:nth-child(3) {
+        transform: translateY(16px);
+    }
+
+    .header.open .nav_header {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .ul_header {
+        display: block;
+    }
+
+    .a_header {
+        display: block;
+        font-size: 24px;
+        padding: 15px 0px;
+    }
+
+    .h1_header {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .a_header_tel {
+        display: none;
+    }
+
+    .wrapper_button {
+        margin-top: 50px;
+        display: grid;
+        /* На компьютерах — 4 колонки одинаковой ширины */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; /* Идеально ровные отступы между всеми кнопками */
+    }
+
+    .button {
+        width: 100%;       /* Кнопка займет всю ячейку сетки */
+        height: 70px;      /* Одинаковая высота для всех */
+        border-radius: 10px;
+        border: none;
+        font-size: 22px;
+        background-color: #d0b8b7;
+        transition: transform 0.2s ease, scale 0.2s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin: 0 20px;
+    }
+
+    .h1_section_popular {
+        font-weight: 400;
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .user_zakaz_h1 {
+        font-size: 26px;
+        font-weight: 400;
+        margin: 35px auto;
+        text-align: center;
+    }
+
+    .h1_section_user_zakaz {
+        font-size: 26px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .wrapper {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    .wrapper-header {
+        height: 80px;
+    }
+
+    .logotype {
+        width: 60px;
+        height: 60px;
+    }
+
+    .h1_header {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .section_main {
+        margin-top: 80px;
+    }
+
+    .wrapper_button {
+        margin-top: 30px;
+        display: grid;
+        /* На компьютерах — 4 колонки одинаковой ширины */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; /* Идеально ровные отступы между всеми кнопками */
+    }
+
+    .button {
+        width: 100%;       /* Кнопка займет всю ячейку сетки */
+        height: 50px;      /* Одинаковая высота для всех */
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        background-color: #d0b8b7;
+        transition: transform 0.2s ease, scale 0.2s ease;
+    }
+
+    .h1_section_popular {
+        font-weight: 400;
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .button_price-list-popular_1 {
+        display: none;
+    }
+
+    .button_price-list-popular_2 {
+        display: none;
+    }
+
+    .slider-track img {
+        width: 80%;
+    }
+    .slider-container {
+        gap: 5px; /* Меньше отступ до кнопок на мобиле */
+    }
+
+    .user_zakaz_h1 {
+        font-size: 24px;
+    }
+
+    .h1_section_user_zakaz_tel {
+        margin: 20px auto;
+        font-size: 26px;
+    }
+
+    .telegram_img, .max_img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+}
+

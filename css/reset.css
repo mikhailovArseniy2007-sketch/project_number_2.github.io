@@ -1,0 +1,40 @@
+/* 1. Убираем лишние отступы и задаем border-box для всех элементов */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Убираем стандартные маркеры у списков (по желанию) */
+ul, ol {
+  list-style: none;
+}
+
+/* 3. Делаем body удобным для работы */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+/* 4. Упрощаем работу с изображениями */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Наследуем шрифты для полей ввода */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Убираем анимации для тех, кто их отключил в системе (Accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

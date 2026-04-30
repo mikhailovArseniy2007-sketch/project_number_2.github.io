@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Monserat;
+    src: url(/assets/fonts/moserat/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: marcul;
+    src: url(/assets/fonts/marcul/MarckScript-Regular.ttf);
+}
+
+
+html, body {
+    overflow-x: hidden !important; /* !important только для теста, чтобы проверить */
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    font-family: Monserat;
+}
+
+
+
+.telegram {
+    position: fixed;
+    bottom: 30px;    /* Прижимаем к низу */
+    right: 30px;     /* Прижимаем к правому краю */
+    z-index: 9999;
+}
+
+.max {
+    position: fixed;
+    bottom: 30px;   /* Ставим ВЫШЕ телеграма (30px + размер иконки + отступ) */
+    right: 130px;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+/* Базовые стили для контейнеров иконок (ссылок) */
+.telegram, .max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Настраиваем анимацию волн */
+.telegram::before, .telegram::after,
+.max::before, .max::after {
+    content: "";
+    position: absolute;
+    width: 60px; /* Размер должен быть примерно как у иконки */
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1; /* Волны СЗАДИ иконки */
+    opacity: 0;
+}
+
+/* Цвета волн для каждой иконки */
+.telegram::before, .telegram::after {
+    background: #24A1DE; /* Синий для Телеграм */
+    animation: pulse-wave 2s infinite;
+}
+
+.max::before, .max::after {
+    background: #5b20f2; /* Фиолетовый для MAX (примерный цвет) */
+    animation: pulse-wave 2s infinite;
+}
+
+/* Задержка для второй волны, чтобы они шли друг за другом */
+.telegram::after, .max::after {
+    animation-delay: 1s;
+}
+
+/* Сама анимация расширения */
+@keyframes pulse-wave {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.5); /* Насколько сильно расходится волна */
+        opacity: 0;
+    }
+}
+
+/* Стили картинок, чтобы они были круглыми */
+.telegram_img, .max_img {
+    width: 60px; /* Укажите ваш размер */
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; /* Картинка поверх волн */
+}
+
+
+.wrapper {
+    max-width: 1368px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid black;
+    background-color: #F4C0BC;
+    z-index: 10;
+}
+
+.wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logotype {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.h1_header {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ul_header {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.a_header {
+    font-size: 24px;
+    margin-left: 2.27em;
+}
+
+.a_header_tel {
+    font-size: 30px;
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #D84B90;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 3px;
+}
+
+.section_main {
+    margin-top: 100px;
+    border-bottom: 2px solid black;
+    min-height: calc(100vh - 102px);
+    background-image: url(../assets/img/ТоняДует.jpg);
+    background-size: cover;
+}
+
+.prewiuy_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1_section_main {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 4em;
+}
+
+.h1_section_main_2 {
+    font-size: 48px;
+    font-weight: 400; 
+}
+
+.h2_section_main {
+    font-family: marcul;
+    font-size: 48px;
+    font-weight: normal;
+    margin-top: 2.625em;
+}
+
+.wrapper_button {
+    margin-top: 50px;
+    display: grid;
+    /* На компьютерах — 4 колонки одинаковой ширины */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Идеально ровные отступы между всеми кнопками */
+}
+
+.button {
+    width: 100%;       /* Кнопка займет всю ячейку сетки */
+    height: 70px;      /* Одинаковая высота для всех */
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    background-color: #d0b8b7;
+    transition: transform 0.2s ease, scale 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px); /* Слегка приподнимаем */
+  background-color: #F4C0BC;
+}
+
+.button:active {
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.93; /* Немного уменьшаем */
+}
+
+.h1_section_popular {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Слайдер */
+
+.price-list {
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_price-list-popular_1 {
+    background: none;       /* Убирает фон (белый или серый) */
+    border: none;           /* Убирает стандартную рамку */
+    padding: 0;             /* Убирает внутренние отступы */
+    cursor: pointer;        /* Возвращает палец при наведении */
+    outline: none;          /* Убирает синюю обводку при клике */
+    transition: transform 0.2s ease, scale 0.2s ease;
+}
+
+.button_price-list-popular_1:hover {
+  transform: translateY(-5px); /* Слегка приподнимаем */
+}
+
+.button_price-list-popular_1:active {
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.93; /* Немного уменьшаем */
+}
+
+.button_price-list-popular_2 {
+    background: none;       /* Убирает фон (белый или серый) */
+  border: none;           /* Убирает стандартную рамку */
+  padding: 0;             /* Убирает внутренние отступы */
+  cursor: pointer;        /* Возвращает палец при наведении */
+  outline: none;          /* Убирает синюю обводку при клике */
+  transition: transform 0.2s ease, scale 0.2s ease;
+}
+
+.button_price-list-popular_2:hover {
+  transform: translateY(-5px); /* Слегка приподнимаем */
+}
+
+.button_price-list-popular_2:active {
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.93; /* Немного уменьшаем */
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price-list {
+    overflow: hidden;
+    width: 90%; /* Занимает почти всё место между кнопками */
+    touch-action: pan-y;
+}
+
+.slider-track {
+    display: flex;
+    /* Убираем все переходы из CSS, так как JS управляет каждым кадром */
+    transition: none !important; 
+    will-change: transform;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+    cursor: grab;
+    user-select: none;
+}
+
+/* Настройка количества фото */
+.slider-track img {
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+    /* ПО УМОЛЧАНИЮ (ПК) — 3 фото (100% / 3 минус зазоры) */
+    width: calc((100% - 40px) / 3); 
+}
+
+/* ТЕЛЕФОНЫ — 1 фото */
+@media (max-width: 600px) {
+    .slider-track img {
+        width: 100%;
+    }
+    .slider-container {
+        gap: 5px; /* Меньше отступ до кнопок на мобиле */
+    }
+}
+
+
+/* Стили кнопок (ваши из скриншота сохраняем) */
+.button_price-list-popular_1, 
+.button_price-list-popular_2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0; /* Чтобы кнопка не сплющилась */
+}
+
+/* Оставляем заявку (подвал) */
+
+.user_zakaz_h1 {
+    font-weight: 400;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.user_zakaz {
+    background-color: #DEC3C1;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.user_zakaz h1{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.button_user-zakaz {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    font: inherit; /* Наследовать шрифт, а не браузерный */
+    cursor: pointer;
+}
+
+.button_user-zakaz:hover {
+  background-color: #282829; /* Затемняем фон */
+  transform: translateY(-2px); /* Слегка приподнимаем */
+}
+
+.button_user-zakaz:active {
+  background-color: #45484a; /* Еще темнее */
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.98; /* Немного уменьшаем */
+}

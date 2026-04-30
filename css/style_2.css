@@ -1,0 +1,299 @@
+@font-face {
+    font-family: Monserat;
+    src: url(/assets/fonts/moserat/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: marcul;
+    src: url(/assets/fonts/marcul/MarckScript-Regular.ttf);
+}
+
+body {
+    font-family: Monserat;
+}
+
+.telegram {
+    position: fixed;
+    bottom: 30px;    /* Прижимаем к низу */
+    right: 30px;     /* Прижимаем к правому краю */
+    z-index: 9999;
+}
+
+.max {
+    position: fixed;
+    bottom: 30px;   /* Ставим ВЫШЕ телеграма (30px + размер иконки + отступ) */
+    right: 130px;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+/* Базовые стили для контейнеров иконок (ссылок) */
+.telegram, .max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Настраиваем анимацию волн */
+.telegram::before, .telegram::after,
+.max::before, .max::after {
+    content: "";
+    position: absolute;
+    width: 60px; /* Размер должен быть примерно как у иконки */
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1; /* Волны СЗАДИ иконки */
+    opacity: 0;
+}
+
+/* Цвета волн для каждой иконки */
+.telegram::before, .telegram::after {
+    background: #24A1DE; /* Синий для Телеграм */
+    animation: pulse-wave 2s infinite;
+}
+
+.max::before, .max::after {
+    background: #5b20f2; /* Фиолетовый для MAX (примерный цвет) */
+    animation: pulse-wave 2s infinite;
+}
+
+/* Задержка для второй волны, чтобы они шли друг за другом */
+.telegram::after, .max::after {
+    animation-delay: 1s;
+}
+
+/* Сама анимация расширения */
+@keyframes pulse-wave {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.5); /* Насколько сильно расходится волна */
+        opacity: 0;
+    }
+}
+
+/* Стили картинок, чтобы они были круглыми */
+.telegram_img, .max_img {
+    width: 60px; /* Укажите ваш размер */
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; /* Картинка поверх волн */
+}
+
+
+.wrapper {
+    max-width: 1368px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid black;
+    background-color: #F4C0BC;
+    z-index: 10;
+}
+
+.wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logotype {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.h1_header {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ul_header {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.a_header {
+    font-size: 24px;
+    margin-left: 2.27em;
+}
+
+.a_header_tel {
+    font-size: 30px;
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #D84B90;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 3px;
+}
+
+.wrapper_button {
+    margin-top: 130px;
+    display: grid;
+    /* На компьютерах — 4 колонки одинаковой ширины */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Идеально ровные отступы между всеми кнопками */
+}
+
+.button {
+    width: 100%;       /* Кнопка займет всю ячейку сетки */
+    height: 70px;      /* Одинаковая высота для всех */
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    background-color: #d0b8b7;
+    transition: transform 0.2s ease, scale 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px); /* Слегка приподнимаем */
+  background-color: #F4C0BC;
+}
+
+.button:active {
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.93; /* Немного уменьшаем */
+}
+
+.h1cardSection {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cardSection {
+    display: flex;       /* Превращает контейнер в гибкий ряд */
+    flex-wrap: wrap;     /* ГЛАВНОЕ: разрешает перенос элементов на новую строку */
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.cardSection {
+    display: grid;
+    /* Создает 4 колонки одинаковой ширины */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+/* На мобильных устройствах меняем на 1 или 2 колонки */
+@media (max-width: 1000px) {
+    .cardSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Смещение вниз на 20px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Возврат в исходную позицию */
+    }
+}
+
+.card {
+    height: 520px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F4C0BC;
+    border-radius: 25px;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+
+.cardImg{
+    border-radius: 25px 25px 5px 5px;
+}
+
+.title {
+    margin: 1em auto 0em;
+}
+
+.price {
+    margin: 1em auto;
+}
+
+.buttonAddCards {
+    display: block;
+    width: 230px;
+    height: 70px;
+    border-radius: 25px;
+    border: solid 2px black;
+    background-color: #F4C0BC;
+    align-items: center;
+    margin: 25px auto 0px;
+    font-size: 20px;
+}
+
+/* Оставляем заявку (подвал) */
+
+.user_zakaz_h1 {
+    font-weight: 400;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.user_zakaz {
+    background-color: #DEC3C1;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.user_zakaz h1{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.button_user-zakaz {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    font: inherit; /* Наследовать шрифт, а не браузерный */
+    cursor: pointer;
+}
+
+.button_user-zakaz:hover {
+  background-color: #282829; /* Затемняем фон */
+  transform: translateY(-2px); /* Слегка приподнимаем */
+}
+
+.button_user-zakaz:active {
+  background-color: #45484a; /* Еще темнее */
+  transform: translateY(0); /* Возвращаем на место (эффект нажатия) */
+  scale: 0.98; /* Немного уменьшаем */
+}
