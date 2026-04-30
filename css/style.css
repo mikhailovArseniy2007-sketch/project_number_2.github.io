@@ -202,6 +202,7 @@ a {
     border: none;
     font-size: 22px;
     background-color: #d0b8b7;
+    color: black;
     transition: transform 0.2s ease, scale 0.2s ease;
 }
 
