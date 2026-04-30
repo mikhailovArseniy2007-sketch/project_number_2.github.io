@@ -88,6 +88,32 @@ window.addEventListener('mouseup', () => {
 track.addEventListener('mouseenter', () => { if(!isDragging) isPaused = true; });
 track.addEventListener('mouseleave', () => { if(!isDragging) isPaused = false; });
 
+track.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    isPaused = true;
+    startX = e.touches[0].pageX; // Берем координату первого касания
+    dragTranslate = targetTranslate;
+}, { passive: true });
+
+window.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX;
+    const walk = (x - startX) * 1.5; 
+    targetTranslate = dragTranslate + walk;
+}, { passive: true });
+
+window.addEventListener('touchend', () => {
+    if (!isDragging) return;
+    isDragging = false;
+    isPaused = false;
+    
+    // "Примагничивание" к слайду
+    const slide = track.firstElementChild;
+    const gap = parseInt(window.getComputedStyle(track).gap) || 0;
+    const slideWidth = slide.offsetWidth + gap;
+    targetTranslate = Math.round(targetTranslate / slideWidth) * slideWidth;
+});
+
 const mainButtons = document.querySelectorAll('.wrapper_button .button');
 
 if (mainButtons.length > 0) {
