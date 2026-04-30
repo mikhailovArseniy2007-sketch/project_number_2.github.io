@@ -1,11 +1,11 @@
 @font-face {
     font-family: Monserat;
-    src: url(/assets/fonts/moserat/MontserratAlternates-Regular.ttf);
+    src: url(assets/fonts/moserat/MontserratAlternates-Regular.ttf);
 }
 
 @font-face {
     font-family: marcul;
-    src: url(/assets/fonts/marcul/MarckScript-Regular.ttf);
+    src: url(assets/fonts/marcul/MarckScript-Regular.ttf);
 }
 
 body {
