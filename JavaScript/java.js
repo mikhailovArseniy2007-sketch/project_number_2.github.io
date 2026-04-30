@@ -202,7 +202,7 @@ const products = [
         price: "3600 ₽",
         img: "assets/img/Для_девочек/Для_девочек_9.jpg",
         category: "Для девочек"
-
+    },
     {
         title: "Для девочки",
         price: "3600 ₽",
